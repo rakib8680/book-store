@@ -12,7 +12,7 @@ const Books = () => {
             <h1>Total books : {books.length}</h1>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-5'>
                 {
-                    books.map(book => <Book book={book}></Book>)
+                    books.map(book => <Book book={book} key={book.isbn13}></Book>)
                 }
             </div>
         </div>
