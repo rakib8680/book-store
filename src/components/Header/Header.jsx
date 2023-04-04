@@ -20,7 +20,7 @@ const Header = () => {
 
             {/* nav link section  */}
             <div className='text-base font-bold text-gray-500 lg:inline-flex gap-10 tracking-wide hidden' >
-                <NavLink to='/' className={({ isActive }) => (isActive ? 'text-orange-500' : 'default')}>Home</NavLink>
+                <NavLink to='/' className={ ({ isActive }) => (isActive ? 'text-orange-500' : 'default')}>Home</NavLink>
                 <NavLink to='/books' className={({ isActive }) => (isActive ? 'text-orange-500' : 'default')}>Books</NavLink>
                 <NavLink to='/about' className={({ isActive }) => (isActive ? 'text-orange-500' : 'default')}>About Us</NavLink>
             </div>
