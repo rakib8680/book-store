@@ -7,16 +7,17 @@ const Book = ({ book }) => {
         <>
             {/* <img className='mx-auto' src={image} />
             <h1>{title}</h1> */}
-            <div className="card w-full glass">
-                <figure><img src={image} alt="car!" /></figure>
-                <div className="card-body">
-                    <h2 className="card-title">{title}</h2>
-                    <p>How to park your car at your garage?</p>
-                    <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Learn now!</button>
-                    </div>
+            <div className="overflow-hidden  border-slate-400 shadow-sm shadow-orange-300  rounded-md">
+                <figure className="px-2 w-auto">
+                    <img src={image} className=" object-cover w-full h-56 md:h-64 xl:h-80" />
+                </figure>
+                <div className="items-center text-center px-2">
+                    <h2 className="text-lg pb-3 font-semibold" >{title}</h2>
+                    
                 </div>
             </div>
+
+            
         </>
     );
 };

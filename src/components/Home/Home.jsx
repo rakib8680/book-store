@@ -11,7 +11,7 @@ const Home = () => {
             <div className='mb-10 lg:max-w-lg  lg:pr-5 lg:mb-0'>
                 <div className='max-w-xl mb-6 lg:mt-8'>
                     <div>
-                        <p className='badge'>ON SALE!</p>
+                        <p className='my-badge'>ON SALE!</p>
                     </div>
                     <h2 className='max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-slate-600 sm:text-4xl sm:leading-none'>
                         A reader lives a <br className='hidden md:block' /> thousand lives{' '}
@@ -24,7 +24,7 @@ const Home = () => {
                     </p>
                 </div>
                 <div className='flex flex-col items-center md:flex-row '>
-                    <Link to='/books' className='btn md:w-auto md:mr-4 mt-4 md:mt-0'>
+                    <Link to='/books' className='my-btn md:w-auto md:mr-4 mt-4 md:mt-0'>
                         <div className='inline-flex items-center justify-center w-full h-full '>
                             <p className='mr-3 '>Visit Store</p>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -35,7 +35,7 @@ const Home = () => {
                     </Link>
                     <Link
                         to='/about'
-                        className='btn-secondary mt-4 md:mt-0'
+                        className='my-btn-secondary mt-4 md:mt-0'
                     >
                         Learn More
                     </Link>
