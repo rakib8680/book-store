@@ -26,5 +26,5 @@
 }
 
 .book-fade-effect{
-    @apply text-center bg-slate-500 bg-opacity-90 opacity-0 space-y-5  my-auto text-white font-semibold absolute inset-0 hover:opacity-100 transition duration-500 rounded-md
+    @apply text-center bg-slate-500 bg-opacity-90 opacity-0 space-y-5  my-auto text-white font-semibold absolute inset-0 hover:opacity-100 transition duration-500 rounded-md p-3 flex flex-col justify-center items-center
 }

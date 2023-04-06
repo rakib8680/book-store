@@ -18,9 +18,9 @@ const Book = ({ book }) => {
             </div>
 
             <div className='book-fade-effect'>
-                <h1>{title}</h1>
-                <h3>{subtitle}</h3>
-                <p>Price : {price}</p>
+                <h1 className='text-lg font-semibold text-slate-100'>{title}</h1>
+                <h3 className='text-sm font-light'>{subtitle}</h3>
+                <p className='text-2xl font-extrabold'>Price : <span className='text-yellow-300'>{price}</span></p>
             </div>
         </div>
     );
