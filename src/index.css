@@ -15,3 +15,16 @@
 .my-btn-secondary{
     @apply bg-slate-600 text-white font-semibold text-base md:text-xl px-3 py-3 rounded-md transition hover:bg-orange-500 duration-300 shadow-md inline-flex items-center
 }
+.book-div{
+    @apply relative transition duration-500 transform hover:-translate-y-2
+}
+.book-card{
+    @apply overflow-hidden  border-slate-400 shadow-sm shadow-orange-300  mb-3 md:mb-0 rounded-md
+}
+.book-card-img{
+    @apply object-cover w-full h-full md:h-64 xl:h-80
+}
+
+.book-fade-effect{
+    @apply text-center bg-slate-500 bg-opacity-90 opacity-0 space-y-5  my-auto text-white font-semibold absolute inset-0 hover:opacity-100 transition duration-500 rounded-md
+}
