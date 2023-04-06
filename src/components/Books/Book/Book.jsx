@@ -1,10 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Book = ({ book }) => {
-    console.log(book)
     const { image, isbn13, price, title, subtitle, url } = book
     return (
-        <div className='book-div'>
+        <Link to={`../book/${isbn13}`} className='book-div'>
             {/* <img className='mx-auto' src={image} />
             <h1>{title}</h1> */}
             <div className="book-card">
@@ -19,10 +19,10 @@ const Book = ({ book }) => {
 
             <div className='book-fade-effect'>
                 <h1 className='text-lg font-semibold text-slate-100'>{title}</h1>
-                <h3 className='text-sm font-light'>{subtitle}</h3>
-                <p className='text-2xl font-extrabold'>Price : <span className='text-yellow-300'>{price}</span></p>
+                <h3 className='text-sm font-light'>{subtitle.substring(0,45)}...</h3>
+                <p className='text-2xl font-extrabold mt-auto'>Price : <span className='text-yellow-300'>{price}</span></p>
             </div>
-        </div>
+        </Link>
     );
 };
 
