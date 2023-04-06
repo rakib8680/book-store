@@ -1,10 +1,13 @@
 import React from 'react';
+import { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 
 const BookDetails = () => {
 
     const bookDetails = useLoaderData()
     const { image, title, desc, authors, publisher, year, rating, url, price } = bookDetails
+
+    const [fold, setFold] = useState(true)
 
     return (
         <div className='my-container'>
@@ -31,28 +34,12 @@ const BookDetails = () => {
                         <p className=' '>Publisher: {publisher}</p>
                         <p className=' '>Year: {year}</p>
                         <p className='mb-5 '>Rating: {rating}</p>
+                        {
+                            fold ? <p className=' text-gray-500'>{desc.substring(0, 100)}... <span className='text-sky-500 cursor-pointer' onClick={() => setFold(!fold)}>Read More</span></p>
+                                :
+                                <p className=' text-gray-500'>{desc} <span className='text-sky-500 cursor-pointer' onClick={() => setFold(!fold)}>Read Less</span></p>
+                        }
                     </div>
-                    {/* {fold ? (
-                        <>
-                            <p className=' text-gray-500'>{desc.substring(0, 100)}.....</p>
-                            <span
-                                className='cursor-pointer text-blue-600 '
-                                onClick={() => setFold(!fold)}
-                            >
-                                Read More
-                            </span>
-                        </>
-                    ) : (
-                        <>
-                            <p className=' text-gray-900'>{desc}.....</p>
-                            <span
-                                className='cursor-pointer text-blue-600 '
-                                onClick={() => setFold(!fold)}
-                            >
-                                Read Less
-                            </span>
-                        </>
-                    )} */}
 
                     <div className='flex gap-5 mt-8 items-center'>
                         <a href={url} target='_blank' className='my-btn'>
